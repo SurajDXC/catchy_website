@@ -32,14 +32,14 @@
 
     <meta itemprop="name" content="@yield('title')">
     <meta itemprop="description" content="@yield('meta')">
-    <meta itemprop="image" content="{{route('home')}}{{$setting->photo ? '/public/images/media/' . $setting->photo->file : '/public/img/200x200.png'}}">
+    <meta itemprop="image" content="{{route('home')}}{{$setting->photo ? '/images/media/' . $setting->photo->file : '/img/200x200.png'}}">
     
     @if($setting->OGgraph_switch == 1)
 
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{route('home')}}" />
-    <meta property="og:image" content="{{route('home')}}{{$setting->photo ? '/public/images/media/' . $setting->photo->file : '/public/img/200x200.png'}}" />
+    <meta property="og:image" content="{{route('home')}}{{$setting->photo ? '/images/media/' . $setting->photo->file : '/img/200x200.png'}}" />
     <meta property="og:site_name" content="{{$setting->author}}" />
     <meta property="og:description" content="@yield('meta')" />
     
@@ -173,7 +173,7 @@
         <div class="header__content__venor">
             <div class="header__logo">
                 <a href="{{url('/')}}" title="{{$setting->title}}">
-                    <img width="105" height="22" class="img-fluid logo-front" src="{{$setting->photo ? '/public/images/media/' . $setting->photo->file : '/public/img/200x200.png'}}" alt="logo">
+                    <img width="105" height="22" class="img-fluid logo-front" src="{{$setting->photo ? '/images/media/' . $setting->photo->file : '/img/200x200.png'}}" alt="logo">
                 </a>
             </div>
 
@@ -234,7 +234,7 @@
                     <div class="left-side-inner">
 
                         <div class="flx-div">
-                            <img src="/public/img/sidebar-img.svg" alt="sidebar-img.svg" >
+                            <img src="/img/sidebar-img.svg" alt="sidebar-img.svg" >
                         </div>
 
                         <div class="header__menu__venor">
@@ -267,7 +267,7 @@
 
 
                         <div class="address-sidebar">
-                            <div><img width="16" height="16" src="/public/img/map-pin.svg" alt="map-pin.svg" > {!!$setting->address!!}</div>
+                            <div><img width="16" height="16" src="/img/map-pin.svg" alt="map-pin.svg" > {!!$setting->address!!}</div>
                         </div>
 
 
@@ -365,7 +365,7 @@
         <span itemprop="description">@yield('meta')</span> 
         <a itemprop="url" href="{{route('home')}}"> </a>
         <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-        <img src="{{route('home')}}{{$setting->photo ? '/public/images/media/' . $setting->photo->file : '/public/img/200x200.png'}}" alt="logo" width="120" itemprop="url"></div>
+        <img src="{{route('home')}}{{$setting->photo ? '/images/media/' . $setting->photo->file : '/img/200x200.png'}}" alt="logo" width="120" itemprop="url"></div>
         <span itemprop="name">{{$setting->title}}</span>
         <em><span itemprop="priceRange">{{$setting->price_range}}</span></em>
         <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress"> 

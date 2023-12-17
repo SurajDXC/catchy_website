@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="img-container">
-                            <img class="img-fluid" src="/public/images/media/{{$user->photo ? $user->photo->file : '/public/img/200x200.png'}}" alt="">
+                            <img class="img-fluid" src="/images/media/{{$user->photo ? $user->photo->file : '/img/200x200.png'}}" alt="">
                         </div>
                     </div>
                     <div class="col-md-9">

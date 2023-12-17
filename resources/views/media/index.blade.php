@@ -73,7 +73,7 @@
                             <tr>
                                 <td><input class="checkboxes" type="checkbox" name="checkBoxArray[]" value="{{$photo->id}}"></td>
                                 <td>{{$photo->id}}</td>
-                                <td><img height="100" src="/public/images/media/{{$photo->file}}" alt=""></td>
+                                <td><img height="100" src="/images/media/{{$photo->file}}" alt=""></td>
                                 <td>
                                     <script type="text/javascript">
                                     function copy_clip{{$photo->id}}() {
@@ -84,7 +84,7 @@
                                           alert("Copied the text: " + copyText.value);
                                     }
                                     </script>
-                                    <input type="text" name="url-clip" class="form-control" id="copy-clip{{$photo->id}}" value="{{url('/')}}/public/images/media/{{$photo->file}}" readonly="" >
+                                    <input type="text" name="url-clip" class="form-control" id="copy-clip{{$photo->id}}" value="{{url('/')}}/images/media/{{$photo->file}}" readonly="" >
                                     <a class="btn btn-primary" onclick="copy_clip{{$photo->id}}()">{{clean( trans('niva-backend.copy_url') , array('Attr.EnableID' => true))}}</a>
                                 </td>
                                 <td>{{$photo->created_at ? $photo->created_at : 'no date' }}</td>

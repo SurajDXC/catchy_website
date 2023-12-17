@@ -167,7 +167,7 @@
             <div class="clients-slider owl-carousel">
                   @foreach($clients as $client)
                   <div class="clients-slide">
-                      <a title="{{$client->company_name}}" target="_blank" href="{{$client->company_link}}"><img class="client_image owl-lazy" data-src="{{$client->photo ? '/public/images/media/' . $client->photo->file : '/public/img/200x200.png'}}" alt="{{$client->company_name}}"></a>
+                      <a title="{{$client->company_name}}" target="_blank" href="{{$client->company_link}}"><img class="client_image owl-lazy" data-src="{{$client->photo ? '/images/media/' . $client->photo->file : '/img/200x200.png'}}" alt="{{$client->company_name}}"></a>
                   </div>
                   @endforeach
             </div>

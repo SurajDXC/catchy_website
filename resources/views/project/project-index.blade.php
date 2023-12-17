@@ -85,7 +85,7 @@
                             @foreach($projects as $project)
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$project->id}}"></td>
-                                    <td data-label="Photo"><img height="50" src="{{$project->photo ? '/public/images/media/' . $project->photo->file : '/public/img/200x200.png'}}" alt=""><p class="mb-0 mt-2"><a href="{{ route('project.edit', $project->id) . '?language=' . request()->input('language')}}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p></td>
+                                    <td data-label="Photo"><img height="50" src="{{$project->photo ? '/images/media/' . $project->photo->file : '/img/200x200.png'}}" alt=""><p class="mb-0 mt-2"><a href="{{ route('project.edit', $project->id) . '?language=' . request()->input('language')}}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p></td>
                                     <td data-label="OWNER">{{$project->user->name}}</td>
                                     <td data-label="TITLE">{{$project->title}}</td>
                                     <td data-label="Category">{{$project->project_category ? $project->project_category->name : 'Uncategorized'}}</td>

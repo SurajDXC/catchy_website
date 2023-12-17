@@ -66,7 +66,7 @@
                                             <div class="form-group">
                                                 <strong>{{clean( trans('niva-backend.photo') , array('Attr.EnableID' => true))}}</strong> <span>{{clean( trans('niva-backend.upload_image') , array('Attr.EnableID' => true))}} <a target="_blank" href="{{route('media.create') . '?language=' . request()->input('language')}}"> {{clean( trans('niva-backend.here') , array('Attr.EnableID' => true))}} </a> {{clean( trans('niva-backend.then_copy_url') , array('Attr.EnableID' => true))}} <a target="_blank" href="{{route('media.index'). '?language=' . request()->input('language')}}"> {{clean( trans('niva-backend.here') , array('Attr.EnableID' => true))}} </a></span>
                                                 <br>
-                                                <img style="padding-bottom:10px" class="img-fluid" width="300" src="{{$setting->banner_img ? $setting->banner_img : '/public/img/200x200.png'}}" alt="123">
+                                                <img style="padding-bottom:10px" class="img-fluid" width="300" src="{{$setting->banner_img ? $setting->banner_img : '/img/200x200.png'}}" alt="123">
                                                 <input type="text" name="banner_img" class="form-control" value="{{$setting->banner_img}}">
                                             </div>
                                         </div>

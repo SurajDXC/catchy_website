@@ -88,7 +88,7 @@
                             @foreach($sliders as $key => $slider)
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$slider->id}}"></td>
-                                    <td><img height="100" src="{{$slider->photo ? '/public/images/media/' . $slider->photo->file : '/public/img/200x200.png'}}" alt="">
+                                    <td><img height="100" src="{{$slider->photo ? '/images/media/' . $slider->photo->file : '/img/200x200.png'}}" alt="">
                                     <p class="mb-0 mt-2"><a href="{{ route('slider.edit', $slider->id) . '?language=' . request()->input('language')}}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p>
                                     </td>
 

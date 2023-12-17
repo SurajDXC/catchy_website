@@ -82,7 +82,7 @@
                             @foreach($services as $service)
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$service->id}}"></td>
-                                    <td><img height="100" src="{{$service->photo ? '/public/images/media/' . $service->photo->file : '/public/img/200x200.png'}}" alt="">
+                                    <td><img height="100" src="{{$service->photo ? '/images/media/' . $service->photo->file : '/img/200x200.png'}}" alt="">
                                     <p class="mb-0 mt-2"><a href="{{ route('service.edit', $service->id) . '?language=' . request()->input('language') }}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p>
                                     </td>
 

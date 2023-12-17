@@ -33,7 +33,7 @@
 	                   <div class="blog_custom">
 	                      <div class="post-thumbnail">
 	                         <a href="{{URL::to('/')}}/post/{{$post->slug}}">
-	                            <img class="blog_post_image img-fluid lazy" width="800" height="550" src="/public/img/loading-blog.gif" data-src="{{$post->photo ? '/public/images/media/' . $post->photo->file : '/public/img/200x200.png'}}" alt="{{$post->title}}">
+	                            <img class="blog_post_image img-fluid lazy" width="800" height="550" src="/img/loading-blog.gif" data-src="{{$post->photo ? '/images/media/' . $post->photo->file : '/img/200x200.png'}}" alt="{{$post->title}}">
 	                          </a>
 	                      </div>
 	                      <span class="post-date">{{ date('d.M.Y', strtotime($post->created_at)) }}</span>
@@ -41,7 +41,7 @@
 	                      <div class="post-details">
 	                         <div class="post-details-holder">
 	                            <div class="post-author-avatar">
-	                               <img alt="" src="/public/img/loading-blog.gif" data-src="{{$post->user->photo ? '/public/images/media/' . $post->user->photo->file : '/public/img/200x200.png'}}" class="avatar img-fluid lazy" height="120" width="120">
+	                               <img alt="" src="/img/loading-blog.gif" data-src="{{$post->user->photo ? '/images/media/' . $post->user->photo->file : '/img/200x200.png'}}" class="avatar img-fluid lazy" height="120" width="120">
 	                             </div>
 	                            
 	                            <h2 class="post-name">

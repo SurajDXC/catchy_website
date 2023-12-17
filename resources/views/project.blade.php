@@ -58,7 +58,7 @@
 						<div class="col-md-6">
 							<div class="featured-image">
 								<a href="{{$project->img_gal1}}">
-									<img class="thumparallax-down img-fluid lazy" src="/public/img/loading-blog.gif" data-src="{{$project->img_gal1}}">
+									<img class="thumparallax-down img-fluid lazy" src="/img/loading-blog.gif" data-src="{{$project->img_gal1}}">
 								</a>
 							</div>
 						</div>
@@ -66,7 +66,7 @@
 						<div class="col-md-6">
 							<div class="featured-image">
 								<a href="{{$project->img_gal2}}">
-									<img class="thumparallax-down img-fluid lazy" src="/public/img/loading-blog.gif" data-src="{{$project->img_gal2}}">
+									<img class="thumparallax-down img-fluid lazy" src="/img/loading-blog.gif" data-src="{{$project->img_gal2}}">
 								</a>
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 						<div class="col-md-6">
 							<div class="featured-image">
 								<a href="{{$project->img_gal3}}">
-									<img class="thumparallax-down img-fluid lazy" src="/public/img/loading-blog.gif" data-src="{{$project->img_gal3}}">
+									<img class="thumparallax-down img-fluid lazy" src="/img/loading-blog.gif" data-src="{{$project->img_gal3}}">
 								</a>
 							</div>
 						</div>
@@ -82,7 +82,7 @@
 						<div class="col-md-6">
 							<div class="featured-image">
 								<a href="{{$project->img_gal4}}">
-									<img class="thumparallax-down img-fluid lazy" src="/public/img/loading-blog.gif" data-src="{{$project->img_gal4}}">
+									<img class="thumparallax-down img-fluid lazy" src="/img/loading-blog.gif" data-src="{{$project->img_gal4}}">
 								</a>
 							</div>
 						</div>

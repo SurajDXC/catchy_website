@@ -84,7 +84,7 @@
                             @foreach($languages->sortBy('id') as $language)
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$language->id}}"></td>
-                                    <td data-label="Photo"><img height="50" src="{{$language->photo ? '/public/images/media/' . $language->photo->file : '/public/img/200x200.png'}}" alt=""></td>
+                                    <td data-label="Photo"><img height="50" src="{{$language->photo ? '/images/media/' . $language->photo->file : '/img/200x200.png'}}" alt=""></td>
                                     <td class="language-name" data-label="Name">
                                         <div class="float-left-language-name">
                                             <p>{{$language->name}}</p>

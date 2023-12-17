@@ -89,7 +89,7 @@
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$post->id}}"></td>
                                     <td data-label="ID">{{$post->id}}</td>
-                                    <td data-label="Photo"><img height="50" src="{{$post->photo ? '/public/images/media/' . $post->photo->file : '/public/img/200x200.png'}}" alt=""><p class="mb-0 mt-2"><a href="{{ route('post.edit', $post->id) . '?language=' . request()->input('language')}}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p></td>
+                                    <td data-label="Photo"><img height="50" src="{{$post->photo ? '/images/media/' . $post->photo->file : '/img/200x200.png'}}" alt=""><p class="mb-0 mt-2"><a href="{{ route('post.edit', $post->id) . '?language=' . request()->input('language')}}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p></td>
                                     <td data-label="OWNER">{{$post->user->name}}</td>
                                     <td data-label="TITLE">{{$post->title}}</a></td>
                                     <td data-label="Category">{{$post->category ? $post->category->name : 'Uncategorized'}}</td>

@@ -61,7 +61,7 @@
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <div class="form-group">
                                         <p> <strong>{{clean( trans('niva-backend.logo') , array('Attr.EnableID' => true))}}</strong></p>
-                                        <img style="padding-bottom:10px" class="img-fluid" width="50" src="/public/images/media/{{$setting->photo ? $setting->photo->file : '/public/img/200x200.png'}}" alt="">
+                                        <img style="padding-bottom:10px" class="img-fluid" width="50" src="/images/media/{{$setting->photo ? $setting->photo->file : '/img/200x200.png'}}" alt="">
                                         <input type="file" name="photo_id" class="form-control-file" placeholder="Photo">
                                     </div>
                                 </div>

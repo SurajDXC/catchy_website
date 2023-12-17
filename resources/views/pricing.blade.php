@@ -9,7 +9,7 @@
   
 
 
-   <div class="banner-section" data-background-image-url="{{$pricingsetting->banner_img ? $pricingsetting->banner_img : '/public/img/200x200.png'}}">
+   <div class="banner-section" data-background-image-url="{{$pricingsetting->banner_img ? $pricingsetting->banner_img : '/img/200x200.png'}}">
 
         <div class="container">
             <h1 class="banner-title">{!!$pricingsetting->banner_title!!}</h1>

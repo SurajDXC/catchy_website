@@ -27,7 +27,7 @@
 	                      <div class="project col-md-4" data-filter="{{$project->project_category->name}}">
 	                        <div class="project-inner">
 	                            <div class="project-thumbnail">
-	                              <a href="{{URL::to('/')}}/project/{{$project->slug}}" title=""><img width="400" height="250" src="/public/img/loading-blog.gif" data-src="{{$project->photo ? '/public/images/media/' . $project->photo->file : '/public/img/200x200.png'}}" class="lazy img-fluid" alt="{{$project->title}}"></a>
+	                              <a href="{{URL::to('/')}}/project/{{$project->slug}}" title=""><img width="400" height="250" src="/img/loading-blog.gif" data-src="{{$project->photo ? '/images/media/' . $project->photo->file : '/img/200x200.png'}}" class="lazy img-fluid" alt="{{$project->title}}"></a>
 	                              </div>
 	                              <h4 class="entry-details-title"> <a href="{{URL::to('/')}}/project/{{$project->slug}}">{{$project->title}}</a></h4>
 	                              <h5 class="project-category">{{$project->project_category->name}}</h5>

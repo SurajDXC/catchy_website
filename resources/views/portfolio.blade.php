@@ -8,7 +8,7 @@
 @section('content')
   
   
-   <div class="banner-section" data-background-image-url="{{$portfoliosettings->banner_img ? $portfoliosettings->banner_img : '/public/img/200x200.png'}}">
+   <div class="banner-section" data-background-image-url="{{$portfoliosettings->banner_img ? $portfoliosettings->banner_img : '/img/200x200.png'}}">
 
         <div class="container">
             <h1 class="banner-title">{!!$portfoliosettings->banner_title!!}</h1>

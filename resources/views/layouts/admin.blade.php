@@ -242,7 +242,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @php $user = Auth::user(); @endphp
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ auth()->user()->name }}</span>
-                                <img class="img-profile rounded-circle" src="{{$user->photo ? '/public/images/media/' . $user->photo->file : '/public/img/200x200.png'}}" alt="">
+                                <img class="img-profile rounded-circle" src="{{$user->photo ? '/images/media/' . $user->photo->file : '/img/200x200.png'}}" alt="">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

@@ -66,7 +66,7 @@
                             @foreach($clients as $client)
                                 <tr>
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$client->id}}"></td>
-                                    <td><img height="100" src="{{$client->photo ? '/public/images/media/' . $client->photo->file : '/public/img/200x200.png'}}" alt="">
+                                    <td><img height="100" src="{{$client->photo ? '/images/media/' . $client->photo->file : '/img/200x200.png'}}" alt="">
                                     <p class="mb-0 mt-2"><a href="{{ route('client.edit', $client->id) }}">{{clean( trans('niva-backend.edit') , array('Attr.EnableID' => true))}}</a></p>
                                     </td>
 

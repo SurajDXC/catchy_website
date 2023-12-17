@@ -73,7 +73,7 @@
                                     <td><input class="checkboxes" type="checkbox" name="checkbox_array[]" value="{{$user->id}}"></td>
                                     <td data-label="Name">
                                         <div class="float-left-avatar">
-                                            <img width="35" height="35" src="{{$user->photo ? '/public/images/media/' . $user->photo->file : '/public/img/200x200.png'}}" alt="">
+                                            <img width="35" height="35" src="{{$user->photo ? '/images/media/' . $user->photo->file : '/img/200x200.png'}}" alt="">
                                         </div>
                                         <div class="float-left-user-name">
                                             <p>{{$user->name}}</p>
